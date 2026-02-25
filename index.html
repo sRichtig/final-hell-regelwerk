@@ -41,6 +41,20 @@
 	  animation-duration: 1s;
 	  animation-direction: top;
 	}
+	
+	body::before {
+  content: "";
+  position: fixed; /* oder absolute */
+  inset: 0;
+
+  background-image: url("img/maschendrahtzaun_optimiert.png");
+  background-repeat: repeat; /* für Kachel-Hintergrund */
+  background-size: auto;
+
+  opacity: 0.05; /* ← Transparenz hier einstellen */
+  pointer-events: none;
+  z-index: -1;
+}
 
 	@keyframes fade {
 	  0% {
@@ -61,7 +75,7 @@
 
 <body class="top">
 
-  <div class="container py-5">
+  <div class="container py-5 background-img">
 
     <!-- Titel -->
     <header class="mb-5">
@@ -78,7 +92,7 @@
 			<p class="card-text">
 				FINAL HELL ist ein Hardcore-Survival-RP-Server, auf dem Entscheidungen Gewicht haben und Konsequenzen real sind. Der Fokus liegt nicht auf Solo-Gameplay, sondern auf gemeinschaftlichem Überleben, Interaktion und langfristigem Rollenspiel. Wer sich vollständig absondert, erschwert nicht nur sein eigenes Überleben, sondern schwächt auch das RP-Gefüge der Welt.
 				<br />
-				Das Permadeath-System bleibt ein fester Bestandteil von FINAL HELL und unterstreicht den kompromisslosen Hardcore-Charakter des Servers. Ergänzend basiert das Serverkonzept auf einem zentralen Handelsort, der Struktur, Orientierung und glaubwürdiges Rollenspiel ermöglicht. Dieser Ort dient bewusst als Sammelpunkt, an dem Spieler aufeinandertreffen, handeln, Konflikte austragen und Beziehungen aufbauen, statt isoliert zu existieren.
+				Das Permadeath-System bleibt ein fester Bestandteil von FINAL HELL und unterstreicht den kompromisslosen Hardcore-Charakter des Servers. Ergänzend basiert das Server Konzept auf einem zentralen Handelsort, der Struktur, Orientierung und glaubwürdiges Rollenspiel ermöglicht. Dieser Ort dient bewusst als Sammelpunkt, an dem Spieler aufeinandertreffen, handeln, Konflikte austragen und Beziehungen aufbauen, statt isoliert zu existieren.
 			</p>
 		</div>
 	</div>
@@ -87,7 +101,7 @@
 	
 	<section class="mb-4">
       <h2>§1 Spawn-Kosten</h2>
-	  <div class="alert alert-info">Perma-Death: Spieler, deren Geldbestand -10.000 $ erreicht oder unterschreitet, unterliegen im Todesfall der Perma-Death-Regel.</div>	
+	  <div class="alert alert-info">Perma-Death: Spieler, deren Geldbestand -10.000$ oder mehr erreicht, unterliegen im Todesfall der Perma-Death-Regel.</div>	
 	  <div class="card">
         <div class="card-body">
           <p class="card-text">
@@ -188,10 +202,10 @@
           <h5 class="card-title">§6.1 Blaue Zone – Händler Zone</h5>
           <p class="card-text">
             <ul>
-				<li>In der blauen Zone dürfen nur offizielle Händler bauen.</li>
+				<li>In der Blauen Zone dürfen nur offizielle Händler bauen.</li>
 				<li>Spieler dürfen diese Zone zum Einkaufen, Verkaufen und Handeln betreten.</li>
-				<li>Eigene Basen oder Strukturen (z.B. Mauern, Kisten, Fallen, Shelter) von normalen Spielern sind in der blauen Zone verboten.</li>
-				<li>Griefing, Blockieren von Händlern oder Camper-Verhalten ist in der blauen Zone streng untersagt.</li>
+				<li>Eigene Basen oder Strukturen (z.B. Mauern, Kisten, Fallen, Shelter) von normalen Spielern sind in der Blauen Zone verboten.</li>
+				<li>Griefing, Blockieren von Händlern oder Camper-Verhalten ist in der Blauen Zone streng untersagt.</li>
 			</ul>
           </p>
         </div>
@@ -211,20 +225,20 @@
 	  
 	  <div class="card">
         <div class="card-body">
-          <h5 class="card-title">§6.3 Orange Zone – Player Outposts</h5>
+          <h5 class="card-title">§6.3 Orange Zone – Player Outposte</h5>
           <p class="card-text">
             <p>
-				Die orange Zone markiert einen Player-Outpost, der von Spielern selbst errichtet und betrieben wird. Dieser Außenposten ist kein vorgefertigter Safeplace, sondern ein durch Spielerarbeit entstandener Ort, der Organisation, Zusammenhalt und aktives Rollenspiel widerspiegelt.
+				Die Orange Zone markiert einen Player Outpost, der von Spielern selbst errichtet und betrieben wird. Dieser Außenposten ist kein vorgefertigter Safeplace, sondern ein durch Spieler Arbeit entstandener Ort, der Organisation, Zusammenhalt und aktives Rollenspiel widerspiegelt.
 			</p>
 			
 			<p>
-				Der Player-Outpost dient als Treffpunkt, Versorgungs- und Interaktionsort für Überlebende. Schutz entsteht hier nicht durch Mechaniken, sondern durch Präsenz, Absprachen und RP der Spieler, die diesen Ort nutzen und verteidigen.
+				Der Player Outpost dient als Treffpunkt, Versorgungs- und Interaktionsort für Überlebende. Schutz entsteht hier nicht durch Mechaniken, sondern durch Präsenz, Absprachen und RP der Spieler, die diesen Ort nutzen und verteidigen.
 			</p>
 			<p>
 				Der Outpost existiert nur so lange, wie er aktiv bespielt, gepflegt und verteidigt wird. Vernachlässigung, fehlende Präsenz oder Konflikte können dazu führen, dass der Ort an Bedeutung verliert oder vollständig zusammenbricht.
 			</p>
 			<p>
-				Der Player-Outpost ist ein dynamischer Teil der Welt. Er kann wachsen, sich verändern oder verschwinden – abhängig von den Entscheidungen der Spieler. Er ist kein sicherer Ort per Regel, sondern ein Ergebnis von Zusammenarbeit, Risiko und Konsequenzen.
+				Der Player Outpost ist ein dynamischer Teil der Welt. Er kann wachsen, sich verändern oder verschwinden – abhängig von den Entscheidungen der Spieler. Er ist kein sicherer Ort per Regel, sondern ein Ergebnis von Zusammenarbeit, Risiko und Konsequenzen.
 			</p>
 		</p>
         </div>
@@ -244,7 +258,7 @@
 				Ein Schuss-Call gilt ab dem Moment, in dem eine Waffe sichtbar auf einen Spieler gerichtet wird. Ab diesem Zeitpunkt befindet sich die Situation in einer akuten Bedrohungslage.
 			</p>
 			<p>
-				Das eigene Leben hat im Roleplay höchste Priorität. Befehle der anderen Partei sind zu befolgen, um das eigene Überleben zu sichern. Unnötiger Widerstand, Heldenverhalten oder sinnlose Eskalation sind nicht erlaubt.
+				Das eigene Leben hat im Roleplay höchste Priorität. Befehle der anderen Partei sind zu befolgen, um das eigene Überleben zu sichern. Unnötiger Widerstand, Heladenverhalten oder sinnlose Eskalation sind nicht erlaubt.
 			</p>
 			<p>
 				Betritt eine fremde Person einen Spieler-Außenposten ohne Einladung oder ohne ausdrückliche Erlaubnis eines berechtigten Mitglieds, gilt dies als RP-relevanter Regelverstoß. Eskaliert die Situation im RP, etwa durch Provokation, Bedrohung oder Ignorieren von Aufforderungen, ist der Einsatz von Schusswaffen innerhalb des RP-Rahmens zulässig.
@@ -330,8 +344,12 @@
 
 	<section class="mb-4">
       <h2>§11 Fahrzeuge Regelwerk</h2>
-      <div class="alert alert-info">
-		Fahrzeuge müssen realistisch genutzt werden. Missbrauch, Regelverstöße oder Ausnutzung führen zum Verlust des Fahrzeugs und weiteren Konsequenzen. Spieler sind selbst dafür verantwortlich, relevante Fahrzeugdaten (Fahrzeug-ID) zu dokumentieren.
+      <div class="card">
+        <div class="card-body">
+          <p class="card-text">
+            Fahrzeuge müssen realistisch genutzt werden. Missbrauch, Regelverstöße oder Ausnutzung führen zum Verlust des Fahrzeugs und weiteren Konsequenzen. Spieler sind selbst dafür verantwortlich, relevante Fahrzeugdaten (Fahrzeug-ID) zu dokumentieren.
+          </p>
+        </div>
       </div>
 	  
 	  <div class="card">
@@ -348,7 +366,7 @@
 				<li><u>Teams/Camps dürfen besitzen:</u></li>
 				<ul>
 					<li>Pro Mitglied: 1 Auto und 1 Motorrad (RIS zählt zu Motorrad)</li>
-					<li>Als Team insgesamt: 2 Traktoren, 4 Boote, 2 Flugzeuge</li>
+					<li>Als Team insgesamt: 2 Traktor, 4 Boote, 2 Flugzeuge</li>
 				</ul>
 			</ul>
 		  </p>
@@ -371,8 +389,12 @@
 	
 	<section class="mb-4">
       <h2>§12 Händler & Handel</h2>
-      <div class="alert alert-info">
-		Alle Ingame-Händler auf der Map sind aktiv und verfügbar, damit Spieler jederzeit Waren kaufen oder verkaufen können. Diese Händler dienen als zentrale Anlaufstellen für den Handel im Spiel und stellen sicher, dass wichtige Items jederzeit zugänglich sind.
+      <div class="card">
+        <div class="card-body">
+          <p class="card-text">
+            Alle Ingame-Händler auf der Map sind aktiv und verfügbar, damit Spieler jederzeit Waren kaufen oder verkaufen können. Diese Händler dienen als zentrale Anlaufstellen für den Handel im Spiel und stellen sicher, dass wichtige Items jederzeit zugänglich sind.
+          </p>
+        </div>
       </div>
 	  
 	  <div class="card">
@@ -382,7 +404,7 @@
 			<ul>
 				<li>Händler bleiben aktiv, solange die Anzahl der aktiven Gewerbe unterhalb des festgelegten Limits liegt.</li>
 				<li>Sobald die maximale Anzahl an Gewerben erreicht wird, werden die Händler automatisch deaktiviert, bis sich die Situation ändert. Dadurch wird sichergestellt, dass das System nicht überlastet wird und das Gameplay ausgewogen bleibt.</li>
-				<li>Die Aktivierung und Deaktivierung der Händler erfolgt dynamisch und passt sich immer der aktuellen Spieler- und Gewerbesituation an.</li>
+				<li>Die Aktivierung und Deaktivierung der Händler erfolgt dynamisch und passt sich immer der aktuellen Spieler- und Gewerbe Situation an.</li>
 			</ul>
 		  </p>
         </div>
@@ -393,7 +415,7 @@
       <h2>§13 Gewerbe-Status im Discord</h2>
 	  <div class="card">
         <div class="card-body">
-          <h5 class="card-title">§13.1 Regeln zur Händler-Aktivierung und -Deaktivierung</h5>
+          <h5 class="card-title">§12.1 Regeln zur Händler-Aktivierung und -Deaktivierung</h5>
           <p class="card-text">
 			<ul>
 				<li>Im Discord wird ein offizieller Gewerbe-Status eingeführt, der für alle Spieler sichtbar macht, wie viele Gewerbe aktiv sind und wann Händler genutzt werden können.</li>
@@ -417,7 +439,7 @@
       <div class="card">
         <div class="card-body">
           <p class="card-text">
-            Streaming auf FINAL HELL ist grundsätzlich erlaubt, sowohl mit als auch ohne Streamer-Lizenz. Wer möchte, kann bei uns auf der Homepage eine Streamer-Lizenz beantragen. <a href="https://sites.google.com/view/finalhellrp/social-media?authuser=0" target="_blank">Link zum Streamer-Lizenz-Fragebogen</a>.
+            Streaming auf FINAL HELL ist grundsätzlich erlaubt, sowohl mit als auch ohne Streamer-Lizenz. Wer möchte, kann bei uns auf der Homepage eine Streamer-Lizenz beantragen. <a href="https://sites.google.com/view/finalhellrp/social-media?authuser=0" target="_blank">Link zum Streamer Lizenz Fragebogen</a>.
           </p>
         </div>
       </div>
@@ -465,7 +487,7 @@
         <div class="card-body">
           <p class="card-text">
             <p>Support wird ausschließlich über die dafür vorgesehenen Kanäle bearbeitet. Private Nachrichten an Support-Mitglieder oder die Serverleitung sind strikt verboten. Anfragen, die außerhalb der offiziellen Kanäle gestellt werden, können nicht bearbeitet werden.</p>
-            <p>Jede Support-Anfrage muss eindeutige Beweise enthalten, z.B. Screenshots oder Videos. Ohne diese Beweise erfolgt kein Support.</p>
+            <p>Jede Support-Anfrage muss eindeutige Beweise enthalten, z. B. Screenshots oder Videos. Ohne diese Beweise erfolgt kein Support.</p>
             <p>Support dient der Klärung von Bugs, Glitches oder technischen Problemen. Er ersetzt keinesfalls RP-Konsequenzen. Die Hardcore-Prinzipien bleiben bestehen, es sei denn, es handelt sich um eindeutig belegte Fehler im Spiel.</p>
             <p>Entscheidungen des Support-Teams sind endgültig und müssen akzeptiert werden. Spieler sollten klar, respektvoll und sachlich kommunizieren. Missbrauch der Support-Kanäle, Spam oder unhöfliches Verhalten kann zu Strafen führen.</p>
             <p>Dieses System stellt sicher, dass Support effizient, transparent und fair abläuft, während gleichzeitig die RP-Integrität und Hardcore-Prinzipien gewahrt bleiben.</p>
@@ -483,7 +505,7 @@
 
     <!-- Footer -->
     <footer class="mt-5 pt-4 border-top">
-      <small>© 2026 – Final Hell SCUM RP - Letztes Update 25.02.2026 </small>
+      <small>© 2026 – Final Hell SCUM RP</small>
     </footer>
 
   </div>
